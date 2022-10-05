@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HPLAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-05 04:00:28 PM"/>
+        <attribute name="created" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNTswMzo1NDoxOSBQTTsxOTMx"/>
+        <attribute name="edited" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNTswNDowMDoyOCBQTTsxOzIwMzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama, nilaiHuruf" type="String" array="False" size=""/>
+            <declare name="nilaiSiswa" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Nama&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Masukan Nilai Siswa&quot;" newline="True"/>
+            <input variable="nilaiSiswa"/>
+            <if expression="nilaiSiswa &gt;=80">
+                <then>
+                    <assign variable="nilaiHuruf" expression="&quot;A&quot;"/>
+                </then>
+                <else>
+                    <if expression="nilaiSiswa &gt;=70">
+                        <then>
+                            <assign variable="nilaiHuruf" expression="&quot;B&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="nilaiSiswa &gt;=60">
+                                <then>
+                                    <assign variable="nilaiHuruf" expression="&quot;C&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="nilaiSiswa &gt;=50">
+                                        <then>
+                                            <assign variable="nilaiHuruf" expression="&quot;D&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="nilaiHuruf" expression="&quot;E&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="nama&amp;&quot; Nilai kamu adalah : &quot;&amp;nilaiHuruf" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
