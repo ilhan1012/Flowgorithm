@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HPLAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-28 04:05:59 PM"/>
+        <attribute name="created" value="SFBMQUI7SFAtMTA7MjAyMi0wOS0yODswMzo1OTo0MCBQTTsxOTQz"/>
+        <attribute name="edited" value="SFBMQUI7SFAtMTA7MjAyMi0wOS0yODswNDowNTo1OSBQTTsxOzIwNTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="luas, panjang, lebar" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Panjang&quot;" newline="True"/>
+            <input variable="panjang"/>
+            <output expression="&quot;Masukan Lebar&quot;" newline="True"/>
+            <input variable="lebar"/>
+            <assign variable="luas" expression="panjang * lebar"/>
+            <output expression="&quot;Luas = &quot;&amp;luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

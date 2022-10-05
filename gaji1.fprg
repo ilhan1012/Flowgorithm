@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HPLAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-05 02:37:08 PM"/>
+        <attribute name="created" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNTswMTo0MTo1MSBQTTsxOTIx"/>
+        <attribute name="edited" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNTswMjozNzowOCBQTTs0OzIwNDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="hariKerja, jamLembur, upah, uangLembur, transLembur, gaji" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Nama&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Masukan Hari Kerja&quot;" newline="True"/>
+            <input variable="hariKerja"/>
+            <output expression="&quot;Masukan Jumlah Jam Lembur&quot;" newline="True"/>
+            <input variable="jamLembur"/>
+            <assign variable="uangLembur" expression="jamLembur * 5000"/>
+            <assign variable="upah" expression="hariKerja * 30000"/>
+            <if expression="jamLembur &gt; 10">
+                <then>
+                    <assign variable="transLembur" expression="0.1 * uangLembur"/>
+                    <output expression="&quot;Kamu dapat uang transport : Rp. &quot;&amp;transLembur" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="transLembur" expression="0"/>
+                    <output expression="&quot;Kamu ga dapat uang transport&quot;" newline="True"/>
+                </else>
+            </if>
+            <assign variable="gaji" expression="uangLembur + upah + transLembur"/>
+            <output expression="nama&amp;&quot; Gaji kamu adalah : Rp. &quot;&amp;gaji" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,10 @@
+1. mulai
+2. Baca Nama
+3. Baca hariKerja
+4. Baca jamLembur
+5. Hitung uangLembur = jamLembur * 5000
+6. Hitung upah = hariKerja * 30000
+7. if jamLembur > maka transLembur = 0.1 * uangLembur else if transLembur = 0
+8. Hitung gaji = uangLembur + upah + transLembur
+9. Tampilkan gaji
+10. selesai

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HPLAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-04 04:13:00 PM"/>
+        <attribute name="created" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNDswMzowMzoyOCBQTTsxOTI0"/>
+        <attribute name="edited" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNDswNDoxMzowMCBQTTsyOzIwMjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="namapekerja" type="String" array="False" size=""/>
+            <declare name="hari, jam, tarif, lembur, perjam, perhari, gaji, translembur" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukannama&quot;" newline="True"/>
+            <input variable="namapekerja"/>
+            <output expression="&quot;masukkanharikerja&quot;" newline="True"/>
+            <input variable="hari"/>
+            <output expression="&quot;masukkanjamlembur&quot;" newline="True"/>
+            <input variable="jam"/>
+            <assign variable="perhari" expression="30.000*hari"/>
+            <assign variable="perjam" expression="5000*jam"/>
+            <if expression="perjam&gt;10">
+                <then>
+                    <assign variable="gaji" expression="perhari+perjam*0.1"/>
+                </then>
+                <else>
+                    <assign variable="gaji" expression="perhari+perjam"/>
+                </else>
+            </if>
+            <output expression="gaji&amp;&quot;gaji kamu&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

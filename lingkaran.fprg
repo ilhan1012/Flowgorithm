@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HPLAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-05 01:07:50 PM"/>
+        <attribute name="created" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNDswMTozODo0NSBQTTsxOTI5"/>
+        <attribute name="edited" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNTswMTowNzo1MCBQTTsyOzIwMzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jarijari, tinggi" type="Integer" array="False" size=""/>
+            <declare name="isitabung" type="Real" array="False" size=""/>
+            <output expression="&quot;masukkan jari jari&quot;" newline="True"/>
+            <input variable="jarijari"/>
+            <output expression="&quot;masukkan tinggi&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <assign variable="isitabung" expression="(3.14*jarijari*jarijari)*tinggi"/>
+            <output expression="&quot;isitabung=&quot;&amp;isitabung" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

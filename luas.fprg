@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HPLAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-28 04:15:07 PM"/>
+        <attribute name="created" value="SFBMQUI7SFAtMTA7MjAyMi0wOS0yODswNDowNjowMyBQTTsxOTM1"/>
+        <attribute name="edited" value="SFBMQUI7SFAtMTA7MjAyMi0wOS0yODswNDoxNTowNyBQTTsxOzIwNDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jari, tinggi" type="Integer" array="False" size=""/>
+            <declare name="luasLingkaran, isiTabung" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukan Jari Jari Lingkaran&quot;" newline="True"/>
+            <input variable="jari"/>
+            <assign variable="luasLingkaran" expression="3.14 * jari * jari"/>
+            <output expression="&quot;Masukan Tinggi Lingkaran&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <assign variable="isiTabung" expression="luasLingkaran * tinggi"/>
+            <output expression="isiTabung" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

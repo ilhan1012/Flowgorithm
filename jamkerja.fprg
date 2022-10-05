@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HPLAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-28 03:59:28 PM"/>
+        <attribute name="created" value="SFBMQUI7SFAtMTA7MjAyMi0wOS0yODswMjoyOToxNSBQTTsxOTQx"/>
+        <attribute name="edited" value="SFBMQUI7SFAtMTA7MjAyMi0wOS0yODswMzo1OToyOCBQTTs0OzIwNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jamkerja, tarif, gaji, hutang, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukan jam kerja :&quot;" newline="True"/>
+            <input variable="jamkerja"/>
+            <output expression="&quot;Masukan jumlah tarif&quot;" newline="True"/>
+            <input variable="tarif"/>
+            <assign variable="gaji" expression="jamkerja * tarif"/>
+            <output expression="&quot;Jumlah Gaji Anda = Jam Kerja * Tarif = &quot;&amp;jamkerja&amp;&quot;*&quot;&amp;Tarif&amp;&quot; = Rp. &quot;&amp;gaji" newline="True"/>
+            <output expression="&quot;Masukan Jumlah Hutang&quot;" newline="True"/>
+            <input variable="hutang"/>
+            <assign variable="j" expression="gaji - hutang"/>
+            <output expression="&quot;Jumlah Gaji Bersih : Rp. &quot;&amp;j" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

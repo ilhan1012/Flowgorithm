@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HPLAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-05 01:41:50 PM"/>
+        <attribute name="created" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNTswMTowMToxOCBQTTsxOTIw"/>
+        <attribute name="edited" value="SFBMQUI7SFAtMTA7MjAyMi0xMC0wNTswMTo0MTo1MCBQTTsyOzIwMjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilaiSiswa" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan nilai siswa&quot;" newline="True"/>
+            <input variable="nilaiSiswa"/>
+            <if expression="nilaiSiswa &gt;= 80">
+                <then>
+                    <output expression="&quot;Nilai Kamu A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="nilaiSiswa &gt;= 60">
+                        <then>
+                            <output expression="&quot;Nilai Kamu B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="nilaiSiswa &gt;= 40">
+                                <then>
+                                    <output expression="&quot;Nilai Kamu C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="nilaiSiswa &gt;= 30">
+                                        <then>
+                                            <output expression="&quot;Nilai Kamu D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Nilai Kamu E&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
