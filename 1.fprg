@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 06:11:38 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tTjNPOVMxRExGUUw7MjAyMi0xMC0xMTswNjowNzozOSBQTTszNzA2"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tTjNPOVMxRExGUUw7MjAyMi0xMC0xMTswNjoxMTozOCBQTTsxOzM4MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai1, nilai2, tampung" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan nilai 1&quot;" newline="True"/>
+            <input variable="nilai1"/>
+            <output expression="&quot;Masukan nilai 2&quot;" newline="True"/>
+            <input variable="nilai2"/>
+            <assign variable="tampung" expression="nilai1"/>
+            <assign variable="nilai1" expression="nilai2"/>
+            <assign variable="nilai2" expression="tampung"/>
+            <output expression="&quot;Nilai 1 : &quot;&amp;nilai1&amp;&quot; Nilai 2 : &quot;&amp;nilai2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

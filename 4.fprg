@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 06:47:57 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tTjNPOVMxRExGUUw7MjAyMi0xMC0xMTswNjo0Mzo0MiBQTTszNzAw"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tTjNPOVMxRExGUUw7MjAyMi0xMC0xMTswNjo0Nzo1NyBQTTsyOzM4MTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilangan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan bilangan&quot;" newline="True"/>
+            <input variable="bilangan"/>
+            <if expression="bilangan = 0">
+                <then>
+                    <output expression="&quot;Nol&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bilangan % 2 = 0">
+                        <then>
+                            <output expression="&quot;Genap&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Ganjil&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

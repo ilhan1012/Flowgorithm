@@ -1,0 +1,11 @@
+Ilhan Manzis
+12221938
+1. Mulai
+2. Input nilai1
+3. Input nilai2
+4. tampung = nilai1
+5. nilai1 = nilai2
+6. nilai2 = tampung
+7. Output nilai1
+8. output nilai2
+9. selesai

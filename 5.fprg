@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 06:58:39 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tTjNPOVMxRExGUUw7MjAyMi0xMC0xMTswNjo1MjozNiBQTTszNzAz"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tTjNPOVMxRExGUUw7MjAyMi0xMC0xMTswNjo1ODozOSBQTTsxOzM4MjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilangan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan bilangan&quot;" newline="True"/>
+            <input variable="bilangan"/>
+            <if expression="bilangan = 0">
+                <then>
+                    <output expression="&quot;Nol&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bilangan &gt; 0">
+                        <then>
+                            <if expression="bilangan % 2 = 0">
+                                <then>
+                                    <output expression="&quot;Genap positif&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Ganjil positif&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="(bilangan * -1) % 2 = 0">
+                                <then>
+                                    <output expression="&quot;Genap negatif&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Ganjil negatif&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

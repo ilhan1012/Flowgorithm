@@ -1,0 +1,8 @@
+Ilhan Manzis
+12221938
+
+1. Mulai
+2. Input bilangan
+3. jika bilangan = 0 maka cetak "Nol", selain itu kerjakan langkah 4
+4. jika bilangan habis dibagi dua maka cetak "Genap", selain itu cetak "Ganjil"
+5. Selesai

@@ -1,0 +1,11 @@
+Ilhan Manzis
+12221938
+
+1. Mulai
+2. Input nilai1
+3. Input nilai2
+4. jika nilai1 > nilai2 maka kerjakan langkah 5, selain itu kerjakan langkah 6
+5. terbesar = nilai1
+6. terbesar = nilai2
+7. output terbesar
+8. selesai
